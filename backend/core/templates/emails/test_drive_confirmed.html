@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Drive Confirmed</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f4f5;font-family:'Segoe UI',Arial,Helvetica,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f5;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#E20505;padding:32px 40px;text-align:center;">
+              <h1 style="margin:0;color:#ffffff;font-size:24px;font-weight:700;letter-spacing:-0.3px;">DQ Motors</h1>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:40px;">
+              <h2 style="margin:0 0 8px;color:#1e293b;font-size:22px;font-weight:700;">Your Test Drive is Confirmed!</h2>
+              <p style="margin:0 0 28px;color:#475569;font-size:15px;line-height:1.7;">
+                Hi {{ name }}, we're excited to have you visit. Here are your appointment details:
+              </p>
+
+              <!-- Appointment Card -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;">
+                <tr>
+                  <td style="padding:20px;background-color:#fef2f2;text-align:center;border-bottom:1px solid #fed7aa;">
+                    <p style="margin:0 0 4px;color:#92400e;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;">Vehicle</p>
+                    <p style="margin:0;color:#1e293b;font-size:18px;font-weight:700;">{{ vehicle_name }}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:0;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="width:50%;padding:20px;text-align:center;border-right:1px solid #e2e8f0;">
+                          <p style="margin:0 0 4px;color:#64748b;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Date</p>
+                          <p style="margin:0;color:#1e293b;font-size:16px;font-weight:700;">{{ date }}</p>
+                        </td>
+                        <td style="width:50%;padding:20px;text-align:center;">
+                          <p style="margin:0 0 4px;color:#64748b;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Time</p>
+                          <p style="margin:0;color:#1e293b;font-size:16px;font-weight:700;">{{ time }}</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:28px 0 0;color:#475569;font-size:15px;line-height:1.7;">
+                Please bring a valid driver's license. If you need to reschedule, feel free to contact us anytime.
+              </p>
+
+              <!-- CTA Button -->
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin:28px auto 0;">
+                <tr>
+                  <td style="background-color:#E20505;border-radius:8px;">
+                    <a href="{{ site_url }}/contact" target="_blank" style="display:inline-block;padding:14px 36px;color:#ffffff;font-size:15px;font-weight:700;text-decoration:none;">Contact Us</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f8fafc;padding:24px 40px;text-align:center;border-top:1px solid #e2e8f0;">
+              <p style="margin:0 0 4px;color:#94a3b8;font-size:12px;">&copy; {{ company_name }}. All rights reserved.</p>
+              <p style="margin:0;color:#94a3b8;font-size:12px;">
+                <a href="{{ site_url }}" style="color:#E20505;text-decoration:none;">{{ site_url }}</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
