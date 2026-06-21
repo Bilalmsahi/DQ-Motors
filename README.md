@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="dealer_frontend/public/logo/Logo%20DQ%20Motors.png" alt="DQ Motors" width="320" />
+  <img src="Logo%20DQ%20Motors.png" alt="DQ Motors" width="320" />
 </p>
 
 <h1 align="center">DQ Motors — Dealership Management Platform</h1>
